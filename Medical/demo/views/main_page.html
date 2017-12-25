@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main_page.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  -->
+	<title></title>
+
+	<script type="text/javascript">
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=320){
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                }else{
+                    docEl.style.fontSize = '100px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        	win.addEventListener(resizeEvt, recalc, false);
+        	doc.addEventListener('DOMContentLoaded', recalc, false);
+    	})(document, window);
+	</script>
+</head>
+<body>
+	<div class="main">
+        <div class="poster"></div>
+        <div class="munu">
+            <div class="item sim-button button1">
+                <div class="item_icon"></div>
+                <div class="item_word">问医生</div>
+            </div>
+            <div class="item sim-button button1">
+                <div class="item_icon"></div>
+                <div class="item_word">预约挂号</div>
+            </div>
+            <div class="item sim-button button1">
+                <div class="item_icon"></div>
+                <div class="item_word">同病社区</div>
+            </div>
+            <div class="item sim-button button1">
+                <div class="item_icon"></div>
+                <div class="item_word">名医讲堂</div>
+            </div>
+            <div class="item sim-button button1">
+                <div class="item_icon"></div>
+                <div class="item_word">就医攻略</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

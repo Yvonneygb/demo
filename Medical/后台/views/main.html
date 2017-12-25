@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/usual.css">
+    <script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  -->
+	<title></title>
+
+	<!-- <script type="text/javascript">
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=320){
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                }else{
+                    docEl.style.fontSize = '100px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        	win.addEventListener(resizeEvt, recalc, false);
+        	doc.addEventListener('DOMContentLoaded', recalc, false);
+    	})(document, window);
+	</script> -->
+</head>
+<body>
+    <div class="top">
+        <div class="word">后台管理</div>
+    </div>
+    <div class="menu">
+        <div class="item selected">视频管理</div>
+        <div class="item">医院管理</div>
+        <div class="item">科室管理</div>
+        <div class="item">医生管理</div>
+        <div class="item">挂号管理</div>
+        <div class="item">预约管理</div>
+        <div class="item">社区管理</div>
+        <div class="item">排队管理</div>
+    </div>
+
+    <div class="right">
+        <div class="vedio_name_box">
+            <div class="vedio_name_title">视频名称:</div>
+            <input class="vedio_name_input_name"></input>
+        </div>
+
+        <div class="vedio_name_box">
+            <div class="vedio_name_title">视频时间:</div>
+            <input class="vedio_name_input_time"></input>
+        </div>
+
+        <div class="vedio_name_box">
+            <div class="vedio_name_title">发布者:</div>
+            <input class="vedio_name_input_people"></input>
+        </div>
+
+        <div class="vedio_name_box_4">
+            <div class="vedio_name_title">视频:</div>
+            <input class="vedio_name_input_vedio"></input>
+            <div class="skin">浏览上传</div>
+        </div>
+
+        <div class="vedio_name_box_5">
+            <div class="vedio_name_title">视频描述:</div>
+            <input class="vedio_name_input_discribe"></input>
+        </div>
+
+        <button class="save">保存</button>
+        <button class="quit">取消</button>
+        <button class="delete">下架视频</button>
+    </div>
+</body>
+</html>

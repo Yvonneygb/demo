@@ -1,0 +1,295 @@
+.navigation_bar{
+	width: 100%;
+	height: 0.3rem;
+	/*margin-top: 0.2rem;*/
+}
+
+.navigation_bar_item{
+	float: left;
+	width: 50%;
+	height: 0.3rem;
+	/*margin-left: 10%;*/
+	line-height: 0.3rem;
+	/*margin-top: 0.075rem;*/
+	text-align: center;
+	background: #00bc12;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.selected{
+	color: #FFF;
+	background: #9ed048;
+}
+
+.navigation_bar_item:first_child{
+	border-right: 1px solid #e5e5e5;
+}
+
+.navigation_bar_selected{
+	width: 35%;
+	height: 0.02rem;
+	background-color: #00bc12;
+	margin-left: 7%;
+
+}
+
+input{
+	width: 90%;
+	height: 0.2rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	border:none;
+	border-bottom: 1px solid #e5e5e5;
+	/*background-color: #9ed048;*/
+}
+
+.username{
+	margin-top: 0.25rem;
+}
+
+.verification_code_input{
+	float: left;
+	width: 40%;
+	height: 0.2rem;
+}
+
+.verification_code_get{
+	float: left;
+    width: 30%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 0.15rem;
+    border: 1px solid #00bc12;
+    margin-left: 30%;
+    border-radius: 8px 8px 8px 8px;
+    /*box-shadow: 0px 1px 0 #00bc12, 1px 1px 0.5px #00bc12*/
+}
+
+.agreement{
+	width: 100%;
+	height: 0.1rem;
+	margin-top: 0.6rem;
+}
+
+.agreement_left{
+	float: left;
+	width: 5%;
+	height: 0.1rem;
+	margin-top: 0.01rem;
+	margin-right: 2%;
+}
+
+.agreement_right{
+	float: left;
+	width: 80%;
+	height: 0.1rem;
+}
+
+.bellow_login{
+	width: 100%;
+	height: 0.15rem;
+	margin-top: 0.1rem;
+}
+
+.forget_password{
+	float: left;
+	width: 20%;
+	height: 0.15rem;
+	line-height: 0.15rem;
+	color: #44cef6;
+}
+
+.regedit{
+	float: right;
+	width: 20%;
+	height: 0.15rem;
+	line-height: 0.15rem;
+	color: #44cef6;
+}
+
+.line{
+	width: 100%;
+	height: 0.01rem;
+	margin-top: 0.3rem;
+}
+
+.line_left , .line_right{
+	float: left;
+	width: 30%;
+	height: 0.01rem;
+	background-color: #e5e5e5;
+}
+
+.line_point{
+	float: left;
+	width: 40%;
+	color: #e5e5e5;
+	text-align: center;
+	margin-top: -0.07rem;
+}
+
+.using_other_account_content{
+	width: 100%;
+	height: 0.4rem;
+	margin-top: 0.13rem;
+}
+
+.item{
+	float: left;
+	width: 10%;
+	height: 0.4rem;
+	margin-left: 5%;
+}
+
+.item:first-child{
+	margin-left: 0px;
+}
+
+.software_img{
+	width: 100%;
+	height: 0.27rem;
+}
+
+.software_name{
+	width: 100%;
+	height: 0.1rem;
+	margin-top: 0.03rem;
+	color: #3b3b3b;
+	text-align: center;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/*copy*/
+@keyframes moon {
+  to {
+    box-shadow: inset 10rem 0 whitesmoke;
+    transform: rotate(10deg);
+  }
+}
+
+.circle {
+  width: 10rem;
+  height: 10rem;
+  background: #000000;
+  margin: 3rem auto;
+  border-radius: 50%;
+  box-shadow: inset -2rem 0 white;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.form-wrapper {
+  background: #000000;
+  border-radius: 2px;
+  margin: 50px auto;
+  position: relative;
+  width: 300px;
+}
+
+form {
+  padding: 30px 20px 0;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-item input {
+  border: none;
+  background: #1F1F1F;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 16px;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.form-item input:focus {
+  background: #4d545e;
+  outline: none;
+}
+
+.button-panel {
+  margin: 20px 0 0;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #8B0000;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.button:hover {
+  background: #660000;
+}
+
+.form-footer {
+  font-size: 0.9em;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.form-footer a {
+  color: #e3e3e3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.form-footer a:hover {
+  color: #c0c0c0;
+}
+
+.login{
+  width: 100%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  margin: 0 auto;
+  background: #00bc12;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #00bc12;
+  box-shadow: 0px 2px 0 #00bc12, 2px 4px 6px #00bc12;
+  font-weight: 800;
+  margin-top: 0.2rem;
+  letter-spacing: 1px;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+
+
+
+

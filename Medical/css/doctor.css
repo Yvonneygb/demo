@@ -1,0 +1,366 @@
+body{
+	font-size: 12px;
+	font-family: '黑体';
+}
+
+.basic_information{
+	width: 100%;
+	height: 1.2rem;
+}
+
+.left{
+	float: left;
+	width: 30%;
+	height: 1.2rem;
+}
+
+.right{
+	float: left;
+	width:70%;
+	height: 1.2rem;
+}
+
+.avator{
+	width: 80%;
+	height: 1rem;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	/*background-color: #000;*/
+	background-image: url(../image/doctor_avator.png);
+	background-size: cover;
+}
+
+
+.name{
+	width: 80%;
+    height: 0.2rem;
+    font-size: 18px;
+    margin-top: 0.2rem;
+    font-weight: 800;
+
+}
+
+.other{
+	width: 100%;
+	height: 0.15rem;
+	margin-top: 0.05rem;
+}
+
+.department{
+	float: left;
+	/*width: 50%;*/
+    height: 0.15rem;
+    line-height: 0.15rem;
+    font-size: 12px;
+    margin-right: 5%;
+    color: #3c3c3c;
+}
+
+.position{
+	float: left;
+	height: 0.15rem;
+	line-height: 0.15rem;
+    font-size: 12px;
+    color: #3c3c3c;
+}
+
+.hospital_infor{
+	width: 100%;
+	height: 0.15rem;
+	margin-top: 0.05rem;
+}
+
+.hospital_name{
+	float: left;
+	height: 0.15rem;
+	line-height: 0.15rem;
+	font-size: 12px;
+	margin-right: 5%;
+	color: #989898;
+}
+
+.hospital_class{
+	float: left;
+	height: 0.15rem;
+	line-height: 0.15rem;
+	font-size: 12px;
+	color: #989898;
+}
+
+/*.score{
+	width: 100%;
+    height: 0.1rem;
+    font-size: 14px;
+    margin-top: 0.1rem;
+}*/
+
+.star{
+	width: 100%;
+	height: 0.15rem;
+	margin-top: 0.05rem;
+}
+
+.star_item{
+	float: left;
+	width: 7%;
+	height: 0.15rem;
+	background-image: url(../image/star_yellow.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.telephone{
+	width: 100%;
+    height: 0.15rem;
+    font-size: 14px;
+    margin-top: 0.1rem;
+    margin-left: 50%;
+}
+
+.telephone_img{
+	float: left;
+	width: 10%;
+	height: 0.15rem;
+	background-image: url(../image/call.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.telephone_num{
+	float: left;
+}
+
+.line{
+	width: 100%;
+	height: 0.08rem;
+	background-color: #f5f5f5;
+	margin-top: 0.1rem;
+}
+
+
+.navigation_bar{
+	width: 100%;
+    height: 0.4rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+}
+
+.ask_him , .registering_him{
+	float: left;
+	width: 50%;
+	height: 0.4rem;
+	margin-top: 0.07rem;
+}
+
+.ask_him_icon , .navigation_icon{
+	float: left;
+	width: 30%;
+	height: 0.3rem;
+	margin-left: 10%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ask_him_icon{
+	background-image: url(../image/ask.png);
+}
+
+.navigation_icon{
+	background-image: url(../image/registering.png);
+}
+
+.navigation_word{
+	float: left;
+	width: 50%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.brief_introduction{
+	width: 100%;
+
+}
+
+.brief_introduction_title{
+	width: 80%;
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 2%;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.brief_introduction_content{
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	font-size: 12px;
+	/*color: #cdcdcd;*/
+}
+
+.career_experience , .be_good_at , .honor{
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 0.15rem;
+}
+
+.career_experience{
+	height: 0.6rem;
+}
+
+.be_good_at{
+	height: 1.8rem;
+}
+
+.honor{
+	height: 0.8rem;
+}
+
+.career_experience_title , .be_good_at_title , .honor_title{
+	float: left;
+	font-size: 12px;
+	font-weight: 800;
+}
+
+.career_experience_content , .be_good_at_content , .honor_content{
+	float: left;
+	margin-top: 0.1rem;
+	font-size: 12px;
+	color: #3c3c3c; 
+	/*line-height: 0.02rem;*/
+}
+
+.be_good_at_content , .honor_content{
+	
+}
+
+/*.career_experience_content{
+	height: 0.5rem;
+}
+
+.be_good_at_content{
+	height: 1.2rem;
+}
+
+.honor_content{
+	height: 0.6rem;
+}*/
+
+.be_good_at_item{
+	width: 100%;
+	margin-top: 0.04rem;
+}
+
+
+.shrink_spread{
+	width: 5%;
+	height: 0.2rem;
+	margin: 0 auto;
+	background-image: url(../image/shrink_spread.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.evaluate_title{
+	width: 80%;
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 2%;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.evaluate{
+	width: 100%;
+	margin-bottom: 0.2rem;
+}
+
+.evaluate_top{
+	width: 90%;
+	height: 0.2rem;
+	padding-left: 2%;
+}
+
+.evaluate_avator{
+	float: left;
+    width: 8%;
+    margin-top: 0.05rem;
+    height: 0.19rem;
+    /*background-color: #000;*/
+    background-image: url(../image/community_avatar_5.jpg);
+	background-size: cover;
+}
+
+.evaluate_username{
+	float: left;
+    width: 80%;
+    height: 0.19rem;
+    line-height: 0.19rem;
+    margin-top: 0.05rem;
+    margin-left: 2%;
+    height: 0.19rem;
+    color: #737373;
+}
+
+.evaluate_content{
+	width: 100%;
+	padding-right: 5%;
+	margin-top: 0.15rem;
+	margin-left: 12%;
+	color: #3b3b3b;
+}
+
+.evaluate_bottom{
+	width: 100%;
+	height: 0.2rem;
+	margin-top: 0.05rem;
+}
+
+.date{
+	float: left;
+	width: 20%;
+	height: 0.2rem;
+	padding-left: 12%;
+	line-height: 0.2rem;
+	color: #e5e5e5;
+}
+
+.agree{
+	float: left;
+    width: 15%;
+    height: 0.2rem;
+    margin-left: 53%;
+    line-height: 0.2rem;
+}
+
+.agree_img{
+	float: left;
+	width: 30%;
+	height: 0.19rem;
+	/*background-color: #000;*/
+	background-image: url(../image/agree.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+
+}
+
+.agree_num{
+	float: left;
+    width: 50%;
+    height: 0.19rem;
+    line-height: 0.19rem;
+    margin-left: 10%;
+    color: #737373;
+}
+
+.line_evaluate{
+	width: 950%;
+	height: 0.01rem;
+	background-color: #f5f5f5;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+}

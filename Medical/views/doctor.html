@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/doctor.css">
+     <link rel="stylesheet" type="text/css" href="../css/top.css" />
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  -->
+	<title></title>
+
+	<script type="text/javascript">
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=320){
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                }else{
+                    docEl.style.fontSize = '100px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        	win.addEventListener(resizeEvt, recalc, false);
+        	doc.addEventListener('DOMContentLoaded', recalc, false);
+    	})(document, window);
+	</script>
+</head>
+<body>
+	 <div class="top">
+        <!-- <div class="back"></div> -->
+        <div class="title">医生主页</div>
+    </div>
+
+    <div class="basic_information">
+        <div class="left">
+            <div class="avator"></div>
+        </div>
+        <div class="right">
+            <div class="name">王大陆</div>
+            <div class="other">
+                <div class="department">消化内科</div>
+                <div class="position">副主任医师</div>
+            </div>
+
+            <div class="hospital_infor">
+                <div class="hospital_name">大连医院</div>
+                <div class="hospital_class">三级甲等</div>
+            </div>
+            
+            <div class="star">
+                <div class="star_item"></div>
+                <div class="star_item"></div>
+                <div class="star_item"></div>
+            </div>
+            <div class="telephone">
+                <div class="telephone_img"></div>
+                <div class="telephone_num">15917123412</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+
+    <!-- 导航栏 -->
+    <div class="navigation_bar">
+        <div class="ask_him">
+            <div class="ask_him_icon"></div>
+            <div class="navigation_word">咨询医生</div>
+        </div>
+        <div class="registering_him">
+             <div class="navigation_icon"></div>
+            <div class="navigation_word">预约挂号</div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="brief_introduction">
+        <div class=" brief_introduction_title">医生简介</div>
+        <div class=" brief_introduction_content">
+
+            <div class="career_experience">
+                <div class="career_experience_title">从业经历:</div>
+                <div class="career_experience_content">
+                    王学玖，男，北京大学口腔颌面外科博士，首都医科大学口腔颌面外科博士后。自1996年起从事口腔颌面外科临床工作
+                </div>
+            </div>
+
+            <div class="be_good_at">
+                <div class="be_good_at_title">擅长：</div>
+                <div class="be_good_at_content">
+                    <div class="be_good_at_item">1. 颌面复杂骨折的诊断和治疗；</div>
+                    <div class="be_good_at_item">2. 经口内切口治疗下颌骨髁状突骨折；</div>
+                    <div class="be_good_at_item">3. 颞下颌关节关节盘外科复位术；</div>
+                    <div class="be_good_at_item">4. 颞下颌关节肿瘤的外科治疗；</div>
+                    <div class="be_good_at_item">5. 颌面部陈旧性创伤畸形的整形修复治疗；</div>
+                    <div class="be_good_at_item">6. 应用正颌外科技术治疗陈旧性颌骨骨折；</div>
+                    <div class="be_good_at_item">7. 颞下颌关节其它疾病的外科治疗。</div>
+                    <div class="be_good_at_item">8. 口腔颌面部肿瘤的手术治疗，包括恶性肿瘤的治疗及颌面部肿瘤手术后缺损自体游离组织瓣的即刻修复治疗。</div>
+                </div>
+            </div>
+
+            <div class="honor">
+                <div class="honor_title">荣誉：</div>
+                <div class="honor_content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;自1998年开始从事口腔颌面创伤及颞下颌关节疾病的治疗研究，自2004年起从事口腔颌面部组织修复再生研究，曾于2011年在德国斯图加特玛丽医院进修颌面部整形及正颌外科技术。先后发表多篇SCI及核心期刊论文，获得并参与国家级及北京市级课题多项。
+                </div>
+            </div>
+        </div>
+
+        <div class="shrink_spread"></div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="evaluate_title">患者评价</div>
+    <!-- 评价 -->
+    <div class="evaluate">
+        <div class="evaluate_top">
+            <div class="evaluate_avator"></div>
+            <div class="evaluate_username">披着条纹睡衣的男孩</div>
+        </div>
+        <div class="evaluate_content">
+            这个医生非常耐心，也很专业，她不断询问我的病
+            情、症状，我觉得她十分耐心。是一个好医生，我
+            向大家推荐她。
+        </div>
+        <div class="evaluate_bottom">
+            <div class="date">2017-10-22</div>
+            <div class="agree">
+                <div class="agree_img"></div>
+                <div class="agree_num">33</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="line_evaluate"></div> -->
+
+    <div class="evaluate">
+        <div class="evaluate_top">
+            <div class="evaluate_avator"></div>
+            <div class="evaluate_username">披着条纹睡衣的男孩</div>
+        </div>
+        <div class="evaluate_content">
+            这个医生非常耐心，也很专业，她不断询问我的病
+            情、症状，我觉得她十分耐心。是一个好医生，我
+            向大家推荐她。
+        </div>
+        <div class="evaluate_bottom">
+            <div class="date">2017-10-22</div>
+            <div class="agree">
+                <div class="agree_img"></div>
+                <div class="agree_num">33</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    //文字收缩与展开
+    var brief_introduction_content = document.getElementsByClassName("brief_introduction_content")[0];
+    var btn = document.getElementsByClassName("shrink_spread")[0];
+
+    //拿到所有文字
+    var str = brief_introduction_content.innerHTML;
+    console.log(str);
+
+    //初始状态为收缩
+    brief_introduction_content.innerHTML = str.substring(0, 780)+"...";
+    document.getElementsByClassName("be_good_at")[0].style.height = "0.9rem";
+    // btn.innerHTML = "展开";
+
+    //设置一个开关，记录展开和收缩，true是收缩状态
+    var isOn = true;
+
+    //btn添加事件，在事件里修改span文字
+    btn.onclick = function () {
+
+       //点击按钮的时候改变开关的值
+        isOn  = !isOn;
+        if(isOn == true){
+            brief_introduction_content.innerHTML = str;
+            document.getElementsByClassName("be_good_at")[0].style.height = "1.8rem";
+            // btn.innerHTML = "收缩";     //现在是展开状态
+        }else{
+            //收缩
+            brief_introduction_content.innerHTML = str.substring(0, 780)+"...";
+            document.getElementsByClassName("be_good_at")[0].style.height = "0.9rem";
+            // btn.innerHTML = "展开";
+        }
+    }
+
+</script>
+</html>

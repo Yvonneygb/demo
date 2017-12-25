@@ -1,0 +1,11 @@
+img{
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.registering_num{
+	/*float: left;*/
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/registering_num.png);	
+}

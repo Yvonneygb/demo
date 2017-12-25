@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/manage_doctor.css">
+    <link rel="stylesheet" href="../css/usual.css">
+    <script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  -->
+	<title></title>
+
+	<!-- <script type="text/javascript">
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=320){
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                }else{
+                    docEl.style.fontSize = '100px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        	win.addEventListener(resizeEvt, recalc, false);
+        	doc.addEventListener('DOMContentLoaded', recalc, false);
+    	})(document, window);
+	</script> -->
+</head>
+<body>
+    <div class="top"></div>
+    <div class="menu">
+        <div class="item">视频管理</div>
+        <div class="item">医院管理</div>
+        <div class="item">科室管理</div>
+        <div class="item">医生管理</div>
+        <div class="item selected">挂号管理</div>
+        <div class="item">预约管理</div>
+        <div class="item">社区管理</div>
+        <div class="item">排队管理</div>
+    </div>
+
+    <div class="right">
+        <div class="hospital_box">
+            <div class="hospital_title">医院名称:</div>
+            <input class="hospital_input_name"></input>
+        </div>
+
+        <div class="hospital_box_2">
+            <div class="hospital_title">医院头像：</div>
+            <input class="hospital_input_avatar"></input>
+            <div class="skin">浏览上传</div>
+        </div>
+
+        <div class="hospital_box">
+            <div class="hospital_title">医院地址：</div>
+            <input class="hospital_input_time_address"></input>
+        </div>
+
+        <div class="hospital_box">
+            <div class="hospital_title">医院等级：</div>
+            <input class="hospital_input_people_range"></input>
+        </div>
+
+        <div class="hospital_box">
+            <div class="hospital_title">医院电话:</div>
+            <input class="hospital_input_tel"></input>
+        </div>
+
+        <div class="hospital_box_5">
+            <div class="hospital_title">医院简介:</div>
+            <input class="hospital_input_discribe"></input>
+        </div>
+
+        <button class="save">保存</button>
+        <button class="quit">取消</button>
+    </div>
+</body>
+</html>

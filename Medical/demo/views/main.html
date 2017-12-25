@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="../css/main_page.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/main2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/top.css" />
+    <script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  -->
+	<title></title>
+
+	<script type="text/javascript">
+		(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=320){
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                }else{
+                    docEl.style.fontSize = '100px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        	win.addEventListener(resizeEvt, recalc, false);
+        	doc.addEventListener('DOMContentLoaded', recalc, false);
+    	})(document, window);
+	</script>
+</head>
+<body id="body">
+	<div class="main">
+
+        <div class="top">
+        <!-- <div class="back"></div> -->
+            <div class="title">医疗首页</div>
+        <!-- <div class="search"></div> -->
+        </div>
+        <!-- 读取文件 -->
+
+        <div id="container">
+            <div id="list" index="5" style="left:0px;">                      
+                <img class="img_change" id="img_4_top" src = "../image/post_4.png">
+
+                <img class="img_change" id="img_0" src = "../image/post_0.png">
+                <img class="img_change" id="img_1" src = "../image/post_1.png">
+                <img class="img_change" id="img_2" src = "../image/post_2.png">
+                <img class="img_change" id="img_3" src = "../image/post_3.png">
+                <img class="img_change" id="img_4" src = "../image/post_4.png">
+                
+                <img class="img_change" id="img_0_bottom" src = "../image/post_0.png">                       
+             </div>
+             <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+             <a href="javascript:;" id="next" class="arrow">&gt;</a>
+         
+         </div>
+
+         <div class="line"></div>
+
+
+         <div class="munu">
+            <a class="item_a" href="#">
+                <div class="item">
+                    <div class="item_icon ask_doctor"></div>
+                    <div class="item_word">问医生</div>
+                </div>
+            </a>
+
+            <a class="item_a" href="registering.html">
+                <div class="item">
+                    <div class="item_icon yuyue"></div>
+                    <div class="item_word">预约挂号</div>
+                </div>
+            </a>
+
+            <a class="item_a" href="communication.html">
+                <div class="item">
+                    <div class="item_icon jiaoliu"></div>
+                    <div class="item_word">交流社区</div>
+                </div>
+            </a>
+
+            <a class="item_a" href="strategy_all.html">
+                <div class="item">
+                    <div class="item_icon gonglue"></div>
+                    <div class="item_word">就医攻略</div>
+                </div>
+            </a>
+        </div>
+
+
+
+
+        <div class="munu">
+            <a class="item_a" href="login.html">
+                <div class="item">
+                    <div class="item_icon login"></div>
+                    <div class="item_word">登录</div>
+                </div>
+            </a>
+
+            <a class="item_a" href="speech.html">
+                <div class="item">
+                    <div class="item_icon speech"></div>
+                    <div class="item_word">名医讲堂</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="line"></div>
+        
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload = function() 
+        {
+            var body = document.getElementById("body");
+            var body_width = body.clientWidth;  
+
+            // var count_adv = document.getElementById("list").getAttribute("index");//获取广告图的张数
+
+            //改list样式，将它的宽度改成（图片数量+2）*屏幕宽度 ， 将初始偏移量改成（-屏幕宽度）
+            document.getElementById("list").style.width = (body_width * (5+2)) + "px";
+            document.getElementById("list").style.left = -body_width  + "px";
+
+            //第一张、最后一张图片大小单独改，宽度为屏幕宽度
+            document.getElementById("img_0_bottom").style.width = body_width + "px";
+            document.getElementById("img_"+ (5-1) +"_top").style.width = body_width + "px";
+           
+           //其余图片大小集中改，宽度为屏幕宽度
+            for(i = 0 ; i < 5 ; i++)
+            {
+                document.getElementById("img_" + i).style.width = body_width + "px";
+                console.log(document.getElementById("img_" + i).clientWidth);
+
+            }
+            
+            var list = document.getElementById('list');
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+
+            function animate(offset) {
+                //获取的是style.left，是相对左边获取距离，所以第一张图后style.left都为负值，
+                //且style.left获取的是字符串，需要用parseInt()取整转化为数字。
+                var newLeft = parseInt(list.style.left) + offset;
+                list.style.left = newLeft + 'px';
+                document.getElementById("list").style.transition = "all 0.5s";
+
+                //解决空白
+                if(newLeft<-(body_width*5)){
+                      list.style.left = -body_width + 'px';
+                      document.getElementById("list").style.transition = "none";
+                 }
+                 if(newLeft>-body_width){
+                       list.style.left = -(body_width*5) + 'px';
+                       document.getElementById("list").style.transition = "none";
+                 }
+            }
+
+        //自动播放
+        var timer;
+        function play() {
+            timer = setInterval(function () {
+                prev.onclick()
+            }, 2500)
+        }
+        play();
+
+
+
+        //定住看某张图
+        var container = document.getElementById('container');
+
+            function stop() {
+                clearInterval(timer);
+            }
+            container.onmouseover = stop;
+            container.onmouseout = play;
+
+
+             var index = 1;
+
+            prev.onclick = function() {
+
+                index -= 1;
+                if (index < 1) {
+                    index = 5;
+                }
+               
+                animate(body_width);
+            }
+            next.onclick = function() {
+                //由于上边定时器的作用，index会一直递增下去，我们只有5个小圆点，所以需要做出判断
+                index += 1;
+                if (index > 5) {
+                    index = 1;
+                }
+                
+                animate(-body_width);
+            }
+
+            //解决图片往左问题
+             function play() {
+                //将轮播图换成向右切换图片
+                timer = setInterval(function () {
+                    next.onclick();
+                }, 2500)
+
+            }
+
+        }
+</script>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/speech.css">
+    <link rel="stylesheet" type="text/css" href="../css/top.css" />
+    <script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  -->
+    <title></title>
+
+    <script type="text/javascript">
+        (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=320){
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                }else{
+                    docEl.style.fontSize = '100px';
+                }
+            };
+        if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+    <div class="top">
+        <!-- <div class="back"></div> -->
+        <div class="title">名医讲堂</div>
+    </div>
+
+    <div class="hot">
+        <div class="hot_title">热门视频</div>
+        <div class="line_gray"></div>
+        <div class="item">
+            <div class="avatar"></div>
+            <div class="right">
+                <div class="vedio_title">中风的前兆</div>
+                <div class="speecher_info">
+                    <div class="speecher_name">王琳</div>
+                    <div class="speecher_from">武汉大学教授</div>
+                </div>
+                <div class="show_num">
+                    <img class="show_icon">
+                    <div class="show_num_word">3.1万</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="avatar"></div>
+            <div class="right">
+                <div class="vedio_title">针灸的好处</div>
+                <div class="speecher_info">
+                    <div class="speecher_name">张锋</div>
+                    <div class="speecher_from">南方医科大学教授</div>
+                </div>
+                <div class="show_num">
+                    <img class="show_icon">
+                    <div class="show_num_word">3.0万</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="avatar"></div>
+            <div class="right">
+                <div class="vedio_title">子宫内膜炎的治疗</div>
+                <div class="speecher_info">
+                    <div class="speecher_name">李云</div>
+                    <div class="speecher_from">五邑中医院妇科主任</div>
+                </div>
+                <div class="show_num">
+                    <img class="show_icon">
+                    <div class="show_num_word">2.9万</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="avatar"></div>
+            <div class="right">
+                <div class="vedio_title">正确认识癌症</div>
+                <div class="speecher_info">
+                    <div class="speecher_name">周文</div>
+                    <div class="speecher_from">南方医科教授</div>
+                </div>
+                <div class="show_num">
+                    <img class="show_icon">
+                    <div class="show_num_word">2.5万</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="avatar"></div>
+            <div class="right">
+                <div class="vedio_title">风湿病可怕吗</div>
+                <div class="speecher_info">
+                    <div class="speecher_name">欧阳州</div>
+                    <div class="speecher_from">湖南武汉大学教授</div>
+                </div>
+                <div class="show_num">
+                    <img class="show_icon">
+                    <div class="show_num_word">1.1万</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="avatar"></div>
+            <div class="right">
+                <div class="vedio_title">胃痛不容小觑</div>
+                <div class="speecher_info">
+                    <div class="speecher_name">杨正</div>
+                    <div class="speecher_from">湖南武汉大学教授</div>
+                </div>
+                <div class="show_num">
+                    <img class="show_icon">
+                    <div class="show_num_word">6700</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
